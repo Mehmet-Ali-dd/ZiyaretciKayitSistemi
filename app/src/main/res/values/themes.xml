@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ZiyaretciKayitSistemi" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#E3F2FD</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="colorPrimaryContainer">@color/blue</item>
+        <item name="colorSecondaryContainer">@color/ligth_blue</item>
+    </style>
+
+    <style name="Theme.ZiyaretciKayitSistemi" parent="Base.Theme.ZiyaretciKayitSistemi" />
+
+    <style name="BlueDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/blue</item>
+
+        <item name="backgroundTint">#FFFFFF</item>
+        <item name="android:background">#FFFFFF</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorSurfaceContainerHigh">#FFFFFF</item>
+        <item name="colorSurfaceContainer">#FFFFFF</item>
+    </style>
+</resources>

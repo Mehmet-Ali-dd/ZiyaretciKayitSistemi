@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ZiyaretciKayitSistemi" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#121212</item>
+    </style>
+</resources>

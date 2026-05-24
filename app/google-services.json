@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528443638504",
+    "project_id": "ziyaretcikayitsistemiapp",
+    "storage_bucket": "ziyaretcikayitsistemiapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528443638504:android:3be83dddf790abd22eff5d",
+        "android_client_info": {
+          "package_name": "com.example.ziyaretcikayitsistemi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN5r-9Gty78bjdM5Ry7dtYpxtb8RByJic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

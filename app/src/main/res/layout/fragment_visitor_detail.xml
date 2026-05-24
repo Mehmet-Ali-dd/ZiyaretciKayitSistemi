@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D6EFD"
+        app:title="Ziyaretçi Detayları"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVisitorInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ziyaretçi Adı Soyadı"
+                android:textSize="14sp"
+                android:textColor="#6C757D" />
+
+            <TextView
+                android:id="@+id/tvDetailVisitorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmet Yılmaz"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212529"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ziyaret Edilen Personel"
+                android:textSize="14sp"
+                android:textColor="#6C757D" />
+
+            <TextView
+                android:id="@+id/tvDetailHostName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayşe Kaya"
+                android:textSize="18sp"
+                android:textColor="#212529"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ziyaret Sebebi"
+                android:textSize="14sp"
+                android:textColor="#6C757D" />
+
+            <TextView
+                android:id="@+id/tvDetailReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İş Görüşmesi"
+                android:textSize="18sp"
+                android:textColor="#212529"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Güncel Durum"
+                android:textSize="14sp"
+                android:textColor="#6C757D" />
+
+            <TextView
+                android:id="@+id/tvDetailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İçeride"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0D6EFD" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:text="Durumu Güncelle"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#198754"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

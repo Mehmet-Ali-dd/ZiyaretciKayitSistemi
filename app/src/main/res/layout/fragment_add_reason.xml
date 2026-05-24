@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarAddReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        app:title="Yeni Ziyaret Sebebi Ekle"
+        app:titleTextColor="#1565C0"
+        app:navigationIcon="@android:drawable/ic_menu_revert"
+        app:navigationIconTint="#1565C0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAddReason"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveReason">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilReasonName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#90CAF9"
+            app:hintTextColor="#6C757D">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etReasonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ziyaret Sebebi (Örn: Mülakat)"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveReason"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:text="Sebebi Kaydet"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1565C0"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

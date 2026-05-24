@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvLogDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:text="18.05.2025"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#212529" />
+
+    <TextView
+        android:id="@+id/tvLogVisitor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Ahmet Yılmaz"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#212529" />
+
+    <TextView
+        android:id="@+id/tvLogHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Ayşe Kaya"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#212529" />
+
+    <TextView
+        android:id="@+id/tvLogStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="İçeride"
+        android:gravity="end"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#212529" />
+</LinearLayout>
